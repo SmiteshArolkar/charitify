@@ -92,13 +92,13 @@
 
                     <!-- Email input -->
                     <div class="form-outline mb-4">
-                        <input type="email" id="loginName" class="form-control" />
+                        <input type="email" id="loginName" class="form-control" required/>
                         <label class="form-label" for="loginName">Email or username</label>
                     </div>
 
                     <!-- Password input -->
                     <div class="form-outline mb-4">
-                        <input type="password" id="loginPassword" class="form-control" />
+                        <input type="password" id="loginPassword" class="form-control" required/>
                         <label class="form-label" for="loginPassword">Password</label>
                     </div>
 
@@ -119,7 +119,7 @@
                     </div>
 
                     <!-- Submit button -->
-                    <button type="submit" class="btn btn-primary bg-warning btn-block mb-4">Sign in</button>
+                    <button type="submit" class="btn btn-primary bg-warning btn-block mb-4" id = "login_submit">Sign in</button>
 
                     <!-- Register buttons -->
                     <div class="text-center">
@@ -203,6 +203,15 @@
         </div>
     </div>
     <!-- Pills content -->
+
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
+<script>
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+</script>
+      <script src="index.js"></script>
 </body>
 
 </html>
