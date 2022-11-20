@@ -81,7 +81,7 @@
                 <div class="bottom-content-wrap row">
                     <div class="col-sm-4">
                         <div class="site-branding">
-                            <a href="#"><img src="img/logo.png" alt="Brand"></a>
+                            <a href="#"><img src = "img/backdrops/4a38d6d7-18a0-40d7-9377-00b84474ac7b.jpg" style="max-height: 50px;max-width: 50px;" alt = "Brand"><img src="img/logo.png" alt="Brand"></a>
                         </div>
                     </div>
                     <div class="col-sm-8 text-right">
@@ -97,18 +97,19 @@
 
                                 </ul>
                             </li>
-
-                            <li><a href="causes.html">Tribal Products</a></li>
-                            <li><a href="team.html">Volunteer</a></li>
+<!-- 
+                            <li><a href="causes.html">Tribal Products</a></li> -->
+                            <li><a href="volunteer.html">Volunteer</a></li>
 
                             <li> <a href="contact.html">Contact</a></li>
-                            
-                            <li><a href="#">Profile</a>
+                            <li ><a id = "UserName">Profile</a>
                                 <ul>
-                                    <li href = "login.html">
-                                        <a>Login</a>
-                                    </li>
+                                    
+                                
+                                    <!-- <li ><a href = "login.html" id = "login_li" >Login</a></li> -->
+                                    <li><a href = "#" onclick="logout()">Logout</a></li>
                                 </ul>
+                                    
                             </li>
                         </ul>
 
@@ -460,6 +461,12 @@
     <script src="js/contact.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
+    
+    <script src="index.js"></script>
 
 </body>
 

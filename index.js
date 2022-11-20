@@ -18,8 +18,10 @@ firebase
       // User is signed in, see docs for a list of available properties
       // https://firebase.google.com/docs/reference/js/firebase.User
       var uid = user.uid;
-      document.getElementById("login_li").style.display = "none"
+      var email_id = user.email;
+      document.getElementById("UserName").textContent = email_id
       
+     
       document.getElementById("main-body").style.display = "initial";
       document.getElementById("login-register").style.display = "none";
       console.log("User Signed in")
@@ -27,9 +29,9 @@ firebase
       var user = firebase.auth().currentUser;
       if(user != null)
       {
-        var email_id = user.email;
-        document.getElementById("UserName").textContent = email_id
+       
       }
+
       // ...
     } else {
 
@@ -48,6 +50,7 @@ const login = document.getElementById("login_submit");
 login.addEventListener("click", (e) => {
   e.preventDefault();
   console.log("login");
+
 
   const email = document.getElementById("loginName").value;
   const password = document.getElementById("loginPassword").value;
@@ -81,7 +84,7 @@ function logout()
     window.alert("Logout")
     firebase.auth().signOut().then(() => {
         // Sign-out successful.
-        location.reload();
+        window.location = "index.html"
       }).catch((error) => {
         // An error happened.
       });
