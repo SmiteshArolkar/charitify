@@ -104,15 +104,14 @@
                             <li><a href="team.html">Volunteer</a></li>
 
                             <li> <a href="contact.html">Contact</a></li>
-                            <li><a href="#">Profile</a>
+                            <li ><a id = "UserName">Profile</a>
                                 <ul>
-                                    <li href = "login.html">
-                                        <a>Login</a>
-                                    </li>
-                                    <li>
-                                        <a onclick="logout()">Logout</a>
-                                    </li>
+                                    
+                                
+                                    <li ><a href = "login.html" id = "login_li" >Login</a></li>
+                                    <li><a href = "#" onclick="logout()">Logout</a></li>
                                 </ul>
+                                    
                             </li>
                         </ul>
 
@@ -642,31 +641,31 @@
 
                 <!-- Name input -->
                 <div class="form-outline mb-4">
-                    <input type="text" id="registerName" class="form-control" />
+                    <input type="text" id="registerName" class="form-control" required />
                     <label class="form-label" for="registerName">Name</label>
                 </div>
 
                 <!-- Username input -->
                 <div class="form-outline mb-4">
-                    <input type="text" id="registerUsername" class="form-control" />
+                    <input type="text" id="registerUsername" class="form-control" required/>
                     <label class="form-label" for="registerUsername">Username</label>
                 </div>
 
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                    <input type="email" id="registerEmail" class="form-control" />
+                    <input type="email" id="registerEmail" class="form-control" required/>
                     <label class="form-label" for="registerEmail">Email</label>
                 </div>
 
                 <!-- Password input -->
                 <div class="form-outline mb-4">
-                    <input type="password" id="registerPassword" class="form-control" />
+                    <input type="password" id="registerPassword" class="form-control" required/>
                     <label class="form-label" for="registerPassword">Password</label>
                 </div>
 
                 <!-- Repeat Password input -->
                 <div class="form-outline mb-4">
-                    <input type="password" id="registerRepeatPassword" class="form-control" />
+                    <input type="password" id="registerRepeatPassword" class="form-control" required/>
                     <label class="form-label" for="registerRepeatPassword">Repeat password</label>
                 </div>
 
@@ -685,7 +684,7 @@
               
 
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block mb-3 bg-warning">Sign in</button>
+                <button type="submit" class="btn btn-primary btn-block mb-3 bg-warning" id = "register_btn">Sign in</button>
             </form>
         </div>
     </div>
